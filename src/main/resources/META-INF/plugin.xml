@@ -8,12 +8,12 @@
     <name>OpenInVsCode</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor url="https://www.yourcompany.com">kun</vendor>
+    <vendor url="https://github.com/DanSheng-bot/idea-OpenInVsCode">kun</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
     <description><![CDATA[
-        open file in vs code
+        open file in vs code!! https://github.com/DanSheng-bot/idea-OpenInVsCode
     ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -27,11 +27,11 @@
     </extensions>
 
     <actions>
-        <action
-                id="kun.idea.plugin.openinvscode.OpenInVsCodeAction"
+        <!--suppress PluginXmlI18n -->
+        <action id="kun.idea.plugin.openinvscode.OpenInVsCodeAction"
                 class="kun.idea.plugin.openinvscode.OpenInVsCodeAction"
-                text="Vs Code"
-        >
+                icon="AllIcons.Actions.RefactoringBulb"
+                text="Vs Code">
             <add-to-group group-id="RevealGroup" anchor="last"/>
         </action>
     </actions>
