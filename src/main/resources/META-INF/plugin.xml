@@ -30,8 +30,8 @@
         <!--suppress PluginXmlI18n -->
         <action id="kun.idea.plugin.openinvscode.OpenInVsCodeAction"
                 class="kun.idea.plugin.openinvscode.OpenInVsCodeAction"
-                icon="AllIcons.Actions.RefactoringBulb"
-                text="Vs Code">
+                icon="/icons/vsCode.svg"
+                text="VS Code">
             <add-to-group group-id="RevealGroup" anchor="last"/>
         </action>
     </actions>
