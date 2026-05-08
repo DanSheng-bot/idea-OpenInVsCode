@@ -46,13 +46,13 @@ class OpenInVsCodeAction : AnAction() {
                 .command(codeExecutable, "-g", virtualFilePath)
                 .inheritIO()
                 .start()
-            Thread(Runnable {
+            Thread {
                 runCatching {
                     process.waitFor()
                 }
-            })
+            }
         }.onFailure {
-            val notification = Notification("OpenInVsCode", "openInVsCode error", it.localizedMessage, NotificationType.ERROR)
+            val notification = Notification("OpenInVsCode", "OpenInVsCode error", it.localizedMessage, NotificationType.ERROR)
             Notifications.Bus.notify(notification)
         }
     }

@@ -1,4 +1,5 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<!--suppress PluginXmlI18n -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>kun.idea.plugin.openInVsCode</id>
@@ -23,7 +24,9 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <notificationGroup id="OpenInVsCode"
+                           displayType="BALLOON"
+                           isLogByDefault="true"/>
     </extensions>
 
     <actions>
