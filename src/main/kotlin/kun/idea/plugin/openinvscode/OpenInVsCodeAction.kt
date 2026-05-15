@@ -52,7 +52,12 @@ class OpenInVsCodeAction : AnAction() {
                 }
             }
         }.onFailure {
-            val notification = Notification("OpenInVsCode", "OpenInVsCode error", it.localizedMessage, NotificationType.ERROR)
+            val notification = Notification(
+                "OpenInVsCode",
+                "OpenInVsCode error",
+                it.localizedMessage,
+                NotificationType.ERROR
+            )
             Notifications.Bus.notify(notification)
         }
     }

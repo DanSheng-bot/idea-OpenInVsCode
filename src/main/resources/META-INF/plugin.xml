@@ -9,12 +9,13 @@
     <name>OpenInVsCode</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor url="https://github.com/DanSheng-bot/idea-OpenInVsCode">kun</vendor>
+    <vendor url="https://github.com/DanSheng-bot">kun</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
     <description><![CDATA[
-        open file in vs code!! https://github.com/DanSheng-bot/idea-OpenInVsCode
+        open file in vs code!!<br>
+        https://github.com/DanSheng-bot/idea-OpenInVsCode
     ]]></description>
 
     <!-- Product and plugin compatibility requirements.
